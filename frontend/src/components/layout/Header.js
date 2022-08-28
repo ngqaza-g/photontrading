@@ -28,23 +28,17 @@ const Header = () => {
                 <div className="col-12 col-md-3">
                     <div className="navbar-brand">
                         <Link to="/">
-                            
-                        
-                        
-                        
-                        
-                         <div id="logoimage4040" ><img src='https://res.cloudinary.com/photontrading/image/upload/v1654806046/products/photonlogo_weodnq.png' alt='logo'/></div>
-                         </Link> 
-                         <div id="logoimage4041" >
+                            <div id="logoimage4040" >
+                                <img src='https://res.cloudinary.com/photontrading/image/upload/v1654806046/products/photonlogo_weodnq.png' alt='logo'/>
+                            </div>
+                        </Link> 
 
-                                          
-
-
+                        <div id="logoimage4041" >
                             <img src='https://res.cloudinary.com/photontrading/image/upload/v1655838579/photon_modified_tgn78x.png' alt='logo2'/>
                         </div>
                         
                           
-                          <div class="dropdown" id='menutab0002' >
+                        <div class="dropdown" id='menutab0002' >
                                
                                  <img id="dropdownMenuButton" data-toggle="dropdown" src='https://res.cloudinary.com/photontrading/image/upload/v1655844602/134216_menu_lines_hamburger_icon004_bmdjyj.png'  alt='menubar'/>
                                
@@ -117,13 +111,7 @@ const Header = () => {
 
                              </ul>
                                  </div>
-                        </div>
-                         
-                    
-                     
-                          
-                        
-                        
+                        </div>                        
                     </div>
                 </div>
 
@@ -148,9 +136,9 @@ const Header = () => {
                                         alt={user && user.name}
                                         className="rounded-circle"
                                     />
-                    </figure>*/}
+                                </figure>*/}
                                 <span className='userNameSmall'>{user && user.name}</span>
-                    </Link>*
+                            </Link>*
      
                             <div className="dropdown-menu" aria-labelledby="dropDownMenuButton">
 
@@ -169,7 +157,11 @@ const Header = () => {
 
                         </div>
 
-                    ) : !loading && <Link to="/login" className="btn ml-4" id="login_btn"><i id='userCircle' class="far iconn fs-1 fa-user-circle"></i><i class="smallScreen"> Login</i></Link>}
+                    ) : !loading ? (<Link to="/login" className="btn ml-4" id="login_btn">
+                            <i id='userCircle' class="far iconn fs-1 fa-user-circle"></i>
+                            <i class="smallScreen"> Login</i>
+                        </Link>
+                    ): ""}
 
 
                 </div>
