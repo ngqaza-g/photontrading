@@ -157,11 +157,11 @@ const Header = () => {
 
                         </div>
 
-                    ) : !loading ? (<Link to="/login" className="btn ml-4" id="login_btn">
+                    ) :<Link to="/login" className="btn ml-4" id="login_btn">
                             <i id='userCircle' class="far iconn fs-1 fa-user-circle"></i>
                             <i class="smallScreen"> Login</i>
                         </Link>
-                    ): ""}
+                    }
 
 
                 </div>
